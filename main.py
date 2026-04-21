@@ -277,6 +277,7 @@ def main():
 				return
 
 			salary_pred = float(pred_df.loc[0, pred_col])
+			salary_pred_usd = salary_pred/93.55
 			metadata["status"] = "predicted"
 			metadata["recommended_salary"] = salary_pred
 			metadata["currency"] = "USD"
@@ -289,7 +290,7 @@ def main():
 				f"""
 				<div class="result-card">
 					<div class="result-label">Recommended Salary</div>
-					<div class="result-value">${salary_pred:,.2f}</div>
+					<div class="result-value">${salary_pred_usd:,.2f}</div>
 				</div>
 				""",
 				unsafe_allow_html=True,

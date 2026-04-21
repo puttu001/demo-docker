@@ -1,5 +1,8 @@
 venv/
 .log
-artifacts/*
+artifacts/*.csv
+artifacts/*.html
+
 data/*
 __pycache__/
+*.md

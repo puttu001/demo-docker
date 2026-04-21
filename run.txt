@@ -1,0 +1,4 @@
+To run locally: streamlit run main.py
+To run from docker:
+    Build command: docker build -t salary-decider:latest -f Dockerfile .
+    Run Command: docker run -d --name salary-app -p 8501:8501 salary-decider:latest
