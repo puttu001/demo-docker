@@ -2,3 +2,4 @@ venv/
 .log
 artifacts/*
 data/*
+__pycache__/
