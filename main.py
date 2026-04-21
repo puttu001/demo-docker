@@ -279,7 +279,7 @@ def main():
 			salary_pred = float(pred_df.loc[0, pred_col])
 			salary_pred_usd = salary_pred/93.55
 			metadata["status"] = "predicted"
-			metadata["recommended_salary"] = salary_pred
+			metadata["recommended_salary"] = salary_pred_usd
 			metadata["currency"] = "USD"
 			metadata["prediction_column"] = pred_col
 			metadata["selected_role"] = user_input["job_title"]

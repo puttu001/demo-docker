@@ -2,7 +2,5 @@ venv/
 .log
 artifacts/*.csv
 artifacts/*.html
-
-
+learning_notes/
 __pycache__/
-*.md
