@@ -34,7 +34,7 @@ jobs:
           docker build \
             -t ${{ secrets.ACR_LOGIN_SERVER }}/${{ env.IMAGE_NAME }}:latest \
             -t ${{ secrets.ACR_LOGIN_SERVER }}/${{ env.IMAGE_NAME }}:${{ steps.vars.outputs.SHORT_SHA }} \
-            -f dockerfile .
+            -f Dockerfile .
 
       - name: Push Docker image to ACR
         run: |
