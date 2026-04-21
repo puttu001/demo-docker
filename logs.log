@@ -3849,3 +3849,41 @@ Alternately, you can install this by running `pip install pycaret[models]`
                 ('normalize', TransformerWrapper(transformer=StandardScaler())),
                 ('trained_model', PassiveAggressiveRegressor(random_state=42))])
 2026-04-21 21:00:09,850:INFO:save_model() successfully completed......................................
+2026-04-21 21:14:39,860:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-04-21 21:14:39,861:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-04-21 21:14:39,861:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-04-21 21:14:39,861:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-04-21 21:14:42,069:INFO:Initializing load_model()
+2026-04-21 21:14:42,069:INFO:load_model(model_name=C:\Users\TransOrg\Desktop\demo-docker\artifacts\pipeline, platform=None, authentication=None, verbose=True)
+2026-04-21 21:14:42,094:WARNING:C:\Users\TransOrg\Desktop\demo-docker\venv\Lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-04-21 21:14:55,000:INFO:Initializing predict_model()
+2026-04-21 21:14:55,001:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000286FDD3E3D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['work_year'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['job_title', 'job_category',
+                                             'employee_residence',
+                                             'experience_level',
+                                             'employment_type', 'work_setting',
+                                             'company_location',
+                                             'company_size'],
+                                    transformer=SimpleImputer(s...
+                                                              handle_missing='return_nan'))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model', PassiveAggressiveRegressor(random_state=42))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000286FDE24FE0>)
+2026-04-21 21:14:55,001:INFO:Checking exceptions
+2026-04-21 21:14:55,001:INFO:Preloading libraries
+2026-04-21 21:14:55,001:INFO:Set up data.
+2026-04-21 21:14:55,017:INFO:Set up index.
